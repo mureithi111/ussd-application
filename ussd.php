@@ -36,16 +36,17 @@ if ($level > 1)
         about($data);
     }
     else if ($data[1] == "3"){
-        //If user selected 3, send them to the about us menu
+        //If user selected 3, send our services menu
         servicesInfo($data);
     }
     else if ($data[1] == "4"){
-        //If user selected 4, send them to the services menu
+        //If user selected 4, send them the contact Info menu
         contactInfo($data);
     }
     else{
+	    //checks if the user input is correct
         $text="Invalid Input";
-		ussd_proceed($text);
+	ussd_proceed($text);
     }
 }
 
