@@ -1,4 +1,5 @@
 <?php
+header('Content-type: text/plain');
 include("functions.php");
 
 //if testing on the browser use $_GET 
